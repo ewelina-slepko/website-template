@@ -48,11 +48,14 @@ header{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main{
@@ -63,6 +66,7 @@ header{
 
     animation-name: moveInLeft;
     animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .heading-primary-sub{
@@ -102,5 +106,30 @@ header{
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.btn-white{
+    color: #777;
+    background-color: #fff;
 }
 
