@@ -1,0 +1,19 @@
+{
+  "name": "website-template",
+  "version": "1.0.0",
+  "description": "website-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewelina-slepko/website-template.git"
+  },
+  "author": "Ewelina Ślepko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewelina-slepko/website-template/issues"
+  },
+  "homepage": "https://github.com/ewelina-slepko/website-template#readme"
+}
