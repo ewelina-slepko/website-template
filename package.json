@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ewelina-slepko/website-template/issues"
   },
-  "homepage": "https://github.com/ewelina-slepko/website-template#readme"
+  "homepage": "https://github.com/ewelina-slepko/website-template#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
