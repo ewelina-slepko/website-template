@@ -1,15 +1,9 @@
-/*
-Colors:
-#0B3454
-#56848C
-#EAD49D
-*/
-
 $color-primary: #0B3454;
 $color-primary-light: #56848C;
 $color-primary-yellow: #EAD49D;
 $color-gray: #777;
 $color-white: #fff;
+$color-black: #000;
 
 *,
 *::after,
@@ -39,52 +33,53 @@ header{
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
+
+    &_logo-box{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    &logo{
+        height: 35px;
+    }
+    
+    &text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
-.logo-box{
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
 
-.logo{
-    height: 35px;
-}
-
-.text-box{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .heading-primary{
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 60px;
-}
 
-.heading-primary-main{
-    display: block;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 35px;
-
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
-
-.heading-primary-sub{
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 15px;
-
-    animation-name: moveInRight;
-    animation-duration: 1s;
+    &main{
+        display: block;
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 35px;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    &sub{
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 15px;
+    
+        animation-name: moveInRight;
+        animation-duration: 1s;
+    }
 }
 
 @keyframes moveInLeft{
@@ -141,12 +136,12 @@ header{
 
 .btn:hover{
     transform:translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 10px 20px rgba($color-black, .2);
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 20px rgba($color-black, .2);
 }
 
 .btn-white{
