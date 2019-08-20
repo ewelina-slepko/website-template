@@ -23,7 +23,7 @@ header {
   background-image: linear-gradient(to right bottom, rgba(11, 52, 84, 0.8), rgba(234, 212, 157, 0.5)), url(../img/photo-header.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
   position: relative; }
 
 .logo-box {
