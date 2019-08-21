@@ -1,15 +1,15 @@
 .section-about{
+    display: flex;
     background-color: $color-gray-light;
-    padding: 25rem;
+    padding: 30rem 25rem;
     margin-top: -25vh
 }
 
-.heading-secondary{
-    text-align: center;
-&-main{
-text-transform: uppercase
+.image-box{
+    &-energy{
+        max-height: 300px;
+        opacity: .8;
+    }
 }
-&-sub{
 
-}
-}
+
