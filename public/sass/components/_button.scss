@@ -47,3 +47,29 @@
         animation-fill-mode: backwards;
      }
 }
+
+.btn-text{
+    &:link, 
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-green-warm;
+        font-size: $default-font-size;
+        padding: 8px;
+        border-radius: 10px;
+        transition: all .2s
+    }
+
+    &:hover{
+        background-color: $color-green-warm;
+        color: $color-white;
+        box-shadow: 0 5px 5px $color-gray;
+        opacity: .7;
+        transform: translateX(5px)
+    }
+
+    &:active{
+
+    }
+}

@@ -14,7 +14,7 @@ body{
 
     &-main{
         display: block;
-        font-size: 50px;
+        font-size: 5rem;
         font-weight: 400;
         letter-spacing: 35px;
     
@@ -35,16 +35,20 @@ body{
 }
 
 .heading-secondary{
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     &-main{
         display: block;
         text-transform: uppercase;
         padding: 20px;
+        text-align: center;
+        background-image: linear-gradient(to right, $color-green-cold,$color-green-warm);
+        -webkit-background-clip: text;
+        color: transparent;
     }
     &-sub{
         display: block;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         line-height: 3rem;
         font-weight: 300;
         text-align: left;

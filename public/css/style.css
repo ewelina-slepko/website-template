@@ -25,7 +25,7 @@ body {
   margin-bottom: 60px; }
   .heading-primary-main {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 35px;
     animation-name: moveInLeft;
@@ -40,12 +40,16 @@ body {
     animation-duration: 1s; }
 
 .heading-secondary {
-  text-align: center;
+  text-align: left;
   font-family: 'Montserrat', sans-serif; }
   .heading-secondary-main {
     display: block;
     text-transform: uppercase;
-    padding: 20px; }
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #496e63, #41a64d);
+    -webkit-background-clip: text;
+    color: transparent; }
   .heading-secondary-sub {
     display: block;
     font-size: 1.6rem;
@@ -81,9 +85,15 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
+.u-margin-bottom-8 {
+  margin-bottom: 80px; }
+
+.u-margin-top-small {
+  margin-top: 12px; }
+
 .section-about {
   display: flex;
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   padding: 30rem 25rem;
   margin-top: -25vh; }
 
@@ -132,6 +142,23 @@ body {
 .btn-animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #41a64d;
+  font-size: 1.6rem;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #41a64d;
+  color: #ffffff;
+  box-shadow: 0 5px 5px #777777;
+  opacity: .7;
+  transform: translateX(5px); }
 
 .header {
   height: 95vh;
