@@ -64,12 +64,12 @@
     &:hover{
         background-color: $color-green-warm;
         color: $color-white;
-        box-shadow: 0 5px 5px $color-gray;
+        box-shadow: 0 5px 5px rgba(158, 158, 158, .4);
         opacity: .7;
         transform: translateX(5px)
     }
 
     &:active{
-
+        box-shadow: 0 8px 8px rgba(158, 158, 158, .4);
     }
 }

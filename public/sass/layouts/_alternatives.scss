@@ -1,0 +1,8 @@
+.alternatives{
+    height: 95vh;
+    background-color: $color-green-light;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 85vh);
+    position: relative;
+}
