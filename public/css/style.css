@@ -91,6 +91,9 @@ body {
 .u-margin-top-small {
   margin-top: 12px; }
 
+.u-text-center {
+  text-align: center; }
+
 .section-about {
   display: flex;
   background-color: #f8f8f8;
@@ -186,9 +189,24 @@ body {
     height: 35px; }
 
 .alternatives {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 95vh;
-  background-color: #e6ede7;
+  background-color: #f0f0f0;
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 85vh);
   position: relative; }
+
+.alternative-box {
+  flex: 1;
+  background-color: #f8f8f8;
+  opacity: 2;
+  box-shadow: 0 2px 2px rgba(158, 158, 158, 0.2);
+  height: 400px;
+  max-width: 300px;
+  padding: 2.5rem;
+  border-radius: 3px; }

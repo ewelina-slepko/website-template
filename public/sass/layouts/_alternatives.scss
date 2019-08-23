@@ -1,8 +1,24 @@
 .alternatives{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     height: 95vh;
-    background-color: $color-green-light;
+    background-color: $color-gray-medium;
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 85vh);
     position: relative;
+}
+
+.alternative-box{
+    flex: 1;
+    background-color: $color-gray-light;
+    opacity: 2;
+    box-shadow: 0 2px 2px rgba(158, 158, 158, .2);
+    height: 400px;
+    max-width: 300px;
+    padding: 2.5rem;
+    border-radius: 3px;
 }
