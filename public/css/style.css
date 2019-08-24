@@ -223,7 +223,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto; }
 
 .heading-tertiary {
@@ -244,14 +244,18 @@ body {
     border-radius: 10px;
     transform: translateX(-50%); }
 
-.gallery-img {
+.img-container {
+  overflow: hidden;
   flex: 1;
-  width: 260px;
-  height: 260px;
   margin: 16px;
-  object-fit: cover;
   border-radius: 2px;
-  transition: all .6s; }
+  min-width: 340px;
+  max-width: 340px; }
+
+.gallery-img {
+  transition: all 1s;
+  object-fit: cover;
+  width: 340px;
+  height: 340px; }
   .gallery-img:hover {
-    transform: translateY(-0.5rem) scale(1.02);
-    opacity: .8; }
+    transform: translateY(-0.5rem) scale(1.04); }
