@@ -7,6 +7,15 @@
 
 html {
   font-size: 62%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25) {
+    html {
+      font-size: 43.75; } }
 
 body {
   box-sizing: border-box; }
@@ -15,8 +24,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400px;
   font-size: 16px;
-  color: #383838;
-  padding: 30px; }
+  color: #383838; }
 
 .heading-primary {
   color: #ffffff;
@@ -33,7 +41,7 @@ body {
     animation-timing-function: ease-out; }
   .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2.2rem;
     font-weight: 400;
     letter-spacing: 15px;
     animation-name: moveInRight;
@@ -45,7 +53,7 @@ body {
   .heading-secondary-main {
     display: block;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 20px;
     text-align: center;
     background-image: linear-gradient(to right, #496e63, #41a64d);
@@ -53,10 +61,28 @@ body {
     color: transparent; }
   .heading-secondary-sub {
     display: block;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 3rem;
     font-weight: 300;
     text-align: left; }
+
+.heading-tertiary {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #383838;
+  padding: 40px; }
+  .heading-tertiary-main:before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #41a64d;
+    left: 50%;
+    bottom: 10px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    transform: translateX(-50%); }
 
 @keyframes moveInLeft {
   0% {
@@ -225,24 +251,6 @@ body {
   justify-content: center;
   width: 80%;
   margin: 0 auto; }
-
-.heading-tertiary {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 3rem;
-  color: #383838;
-  padding: 40px; }
-  .heading-tertiary-main:before {
-    content: "";
-    width: 80px;
-    height: 1px;
-    background-color: #41a64d;
-    left: 50%;
-    bottom: 10px;
-    position: relative;
-    display: block;
-    border-radius: 10px;
-    transform: translateX(-50%); }
 
 .img-container {
   overflow: hidden;

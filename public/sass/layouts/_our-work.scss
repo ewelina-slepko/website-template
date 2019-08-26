@@ -6,28 +6,6 @@
     margin: 0 auto;
 };
 
-.heading-tertiary{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 3rem;
-    color: $color-gray;
-    padding: 40px;
-    &-main{
-        &:before{
-            content: "";
-            width: 80px;
-            height: 1px;
-            background-color: $color-green-warm;
-            left: 50%;
-            bottom: 10px;
-            position: relative;
-            display: block;
-            border-radius: 10px;
-            transform: translateX(-50%);
-        }
-    } 
-}
-
 .img-container{
     overflow: hidden;
     flex: 1;

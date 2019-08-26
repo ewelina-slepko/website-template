@@ -8,6 +8,17 @@
 
 html{
     font-size: 62%;
+
+    @include respond(desktop){
+        font-size: 75%;
+    }
+    @include respond(tablet-landscape){
+        font-size: 56.25%;
+    }
+    @include respond(tablet-portrait){
+        font-size: 43.75;
+    }
+  
 }
 
 body{
