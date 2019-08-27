@@ -1,14 +1,17 @@
 .section-about{
     display: flex;
-    background-color: $color-gray-light;
-    padding: 30rem 25rem;
-    margin-top: -25vh;
-    margin-bottom: -25vh
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
 }
 
 .image-box{
+    flex: 1;
+    max-width: 160px;
+    margin: 0px 60px;
     &-energy{
-        max-height: 300px;
+        max-height: 160px;
         opacity: .8;
     }
 }

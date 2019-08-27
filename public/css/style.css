@@ -15,7 +15,7 @@ html {
       font-size: 56.25%; } }
   @media (max-width: 56.25) {
     html {
-      font-size: 43.75; } }
+      font-size: 43.75%; } }
 
 body {
   box-sizing: border-box; }
@@ -23,7 +23,6 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400px;
-  font-size: 16px;
   color: #383838; }
 
 .heading-primary {
@@ -33,7 +32,7 @@ body {
   margin-bottom: 60px; }
   .heading-primary-main {
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     letter-spacing: 35px;
     animation-name: moveInLeft;
@@ -41,7 +40,7 @@ body {
     animation-timing-function: ease-out; }
   .heading-primary-sub {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 15px;
     animation-name: moveInRight;
@@ -53,18 +52,19 @@ body {
   .heading-secondary-main {
     display: block;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(to right, #496e63, #41a64d);
     -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #496e63, #41a64d);
     color: transparent; }
   .heading-secondary-sub {
     display: block;
-    font-size: 2rem;
+    max-width: 700px;
+    font-size: 1.6rem;
     line-height: 3rem;
     font-weight: 300;
-    text-align: left; }
+    text-align: justify; }
 
 .heading-tertiary {
   text-transform: uppercase;
@@ -112,8 +112,8 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.u-margin-bottom-4 {
-  margin-bottom: 20px; }
+.u-padding-large {
+  padding: 60px 0; }
 
 .u-margin-top-small {
   margin-top: 12px; }
@@ -123,19 +123,24 @@ body {
 
 .section-about {
   display: flex;
-  background-color: #f8f8f8;
-  padding: 30rem 25rem;
-  margin-top: -25vh;
-  margin-bottom: -25vh; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px; }
 
-.image-box-energy {
-  max-height: 300px;
-  opacity: .8; }
+.image-box {
+  flex: 1;
+  max-width: 160px;
+  margin: 0px 60px; }
+  .image-box-energy {
+    max-height: 160px;
+    opacity: .8; }
 
 .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.4rem;
   padding: 15px 40px;
   border-radius: 100px;
   transition: all .2s;
@@ -196,6 +201,7 @@ body {
 
 .header {
   height: 95vh;
+  max-width: 100%;
   background-image: linear-gradient(to right bottom, rgba(11, 52, 84, 0.8), rgba(234, 212, 157, 0.5)), url(../img/photo-header.jpg);
   background-size: cover;
   background-position: top;
@@ -220,13 +226,9 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
-  height: 80vh;
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 85vh);
-  position: relative;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 60px 0;
   margin-bottom: 80px; }
 
 .alternative-box {
@@ -236,6 +238,7 @@ body {
   text-align: center;
   max-width: 300px;
   padding: 2.5rem;
+  margin-top: 30px;
   border-radius: 3px;
   transition: all .6s; }
   .alternative-box:hover {
