@@ -8,9 +8,45 @@
 }
 
 .newsletter-info{
+
+    @include respond(phone){
+        text-align: center;
+    }
+
     font-size: 1.6rem;
+    margin: 20px;
+    &-header{
+
+    }
+    &-description{
+        font-weight: 300
+    }
 }
 
 .newsletter-form{
-    
+    margin: 20px;
+
+    @include respond(phone){
+        text-align: center;
+    }
+
+    &-input{
+        outline: none;
+        background-color: #fff;
+        border: 1px solid transparent;
+        height: 50px;
+        width: 300px;
+        padding: 10px;
+        color: $color-gray;
+    }
+    &-btn{
+        border: none;
+        height: 50px;
+        width: 120px;
+        margin: 20px 0;
+        background-color: $color-green-warm;
+        opacity: .9;
+        color: $color-white;
+        border-radius: 2px;
+    }
 }
