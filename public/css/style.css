@@ -281,15 +281,15 @@ body {
 
 .newsletter {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #f7f5f5;
   padding: 100px 50px; }
 
 .newsletter-info {
-  font-size: 1.6rem;
-  margin: 20px; }
+  margin-top: 20px;
+  font-size: 1.6rem; }
   @media (max-width: 37.5em) {
     .newsletter-info {
       text-align: center; } }
@@ -380,3 +380,13 @@ body {
   100% {
     opacity: 0;
     transform: translateY(-4.8rem) scale(0.5); } }
+
+.footer-container {
+  padding: 10px 50px;
+  text-align: center; }
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
