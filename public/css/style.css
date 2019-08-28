@@ -32,19 +32,25 @@ body {
   margin-bottom: 60px; }
   .heading-primary-main {
     display: block;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary-main {
+        letter-spacing: 1rem; } }
   .heading-primary-sub {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
     animation-name: moveInRight;
     animation-duration: 1s; }
+    @media (max-width: 37.5em) {
+      .heading-primary-sub {
+        letter-spacing: 1rem; } }
 
 .heading-secondary {
   text-align: left;
@@ -270,3 +276,14 @@ body {
   height: 340px; }
   .gallery-img:hover {
     transform: translateY(-0.5rem) scale(1.04); }
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  padding: 100px 50px; }
+
+.newsletter-info {
+  font-size: 1.6rem; }
