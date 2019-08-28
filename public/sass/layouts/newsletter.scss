@@ -1,0 +1,16 @@
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $color-gray-light;
+    padding: 100px 50px
+}
+
+.newsletter-info{
+    font-size: 1.6rem;
+}
+
+.newsletter-form{
+    
+}
