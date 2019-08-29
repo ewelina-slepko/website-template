@@ -121,6 +121,12 @@ body {
 .u-padding-large {
   padding: 60px 0; }
 
+.u-margin-medium {
+  margin: 60px; }
+  @media (max-width: 37.5em) {
+    .u-margin-medium {
+      margin: 20px; } }
+
 .u-margin-bottom-large {
   margin-bottom: 80px; }
 
@@ -390,3 +396,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
+  .info-about {
+    flex: 1; }
+  .info-help {
+    flex: 1; }
+  .info-contact {
+    flex: 1; }
+  .info-social_media {
+    flex: 1; }
