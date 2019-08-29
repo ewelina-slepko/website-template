@@ -127,6 +127,9 @@ body {
     .u-margin-medium {
       margin: 20px; } }
 
+.u-margin-small {
+  margin: 20px 0; }
+
 .u-margin-bottom-large {
   margin-bottom: 80px; }
 
@@ -388,19 +391,26 @@ body {
     transform: translateY(-4.8rem) scale(0.5); } }
 
 .footer-container {
-  padding: 10px 50px;
+  padding: 10px 20px;
   text-align: center; }
 
 .info {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1.6rem;
+  text-align: left; }
+  .info-header {
+    margin: 10px 0; }
   .info-about {
-    flex: 1; }
+    flex: 1;
+    line-height: 30px; }
   .info-help {
     flex: 1; }
+    .info-help-list {
+      list-style-type: none; }
   .info-contact {
-    flex: 1; }
+    flex: 1;
+    line-height: 30px; }
   .info-social_media {
     flex: 1; }

@@ -1,24 +1,35 @@
 .footer-container{
-    padding: 10px 50px;
+    padding: 10px 20px;
     text-align: center;
 }
 
 .info{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+    text-align: left;
+
+    &-header{
+        margin: 10px 0
+    }
 
     &-about{
-        flex: 1
+        flex: 1;
+        line-height: 30px;
     }
 
     &-help{
-        flex: 1
+        flex: 1;
+
+        &-list{
+            list-style-type: none;
+        }
     }
 
     &-contact{
-        flex: 1
+        flex: 1;
+        line-height: 30px;
     }
 
     &-social_media{
