@@ -26,9 +26,9 @@
 }
 
 .inline-photo {
-    transition: transform 1s .25s,
+    transition: transform .6s .1s,
   }
 
   .inline-photo.is-visible {
-    transform: translateY(3em);
+    transform: translateY(4em);
   }
