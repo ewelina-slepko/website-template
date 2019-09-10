@@ -118,12 +118,6 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
-.inline-photo {
-  transition: transform 1.2s .25s, opacity .3s .25s ease-out; }
-
-.inline-photo.is-visible {
-  transform: translateY(4em); }
-
 .u-padding-large {
   padding: 60px 0; }
 
@@ -150,7 +144,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 60px; }
+  padding: 60px;
+  transition: transform 1s 1s; }
+
+.section-about.is-visible {
+  transform: translateY(-4em); }
 
 .image-box {
   flex: 1;
@@ -294,6 +292,12 @@ body {
   .gallery-img:hover {
     transform: translateY(-0.5rem) scale(1.04); }
 
+.inline-photo {
+  transition: transform 1s 0.25s; }
+
+.inline-photo.is-visible {
+  transform: translateY(3em); }
+
 .newsletter {
   display: flex;
   align-items: flex-start;
@@ -420,3 +424,6 @@ body {
     line-height: 30px; }
   .info-social_media {
     flex: 1; }
+    .info-social_media-icon {
+      height: 25px;
+      margin: 6px; }
