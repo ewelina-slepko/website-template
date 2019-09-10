@@ -33,7 +33,12 @@
     }
 
     &-social_media{
-        flex: 1
+        flex: 1;
+
+        &-icon{
+            height: 25px;
+            margin: 6px
+        }
     }
 }
 
