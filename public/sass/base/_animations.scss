@@ -39,3 +39,12 @@
         transform: translateX(0);
     }
 }
+
+.inline-photo {
+    transition: transform 1.2s .25s,
+                opacity .3s .25s ease-out;
+  }
+
+  .inline-photo.is-visible {
+    transform: translateY(4em);
+  }
