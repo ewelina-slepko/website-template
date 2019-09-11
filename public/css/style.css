@@ -145,7 +145,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 60px;
-  transition: transform 1s 1s; }
+  transition: transform 0.6s 0.1s; }
 
 .section-about.is-visible {
   transform: translateY(-4em); }
@@ -263,7 +263,7 @@ body {
   border-radius: 3px;
   transition: all .6s; }
   .alternative-box:hover {
-    transform: translateY(-0.5rem) scale(1.02); }
+    transform: translateY(-0.3rem) scale(1.01); }
 
 .icon {
   max-height: 80px;
@@ -296,7 +296,7 @@ body {
   transition: transform 0.6s 0.1s; }
 
 .inline-photo.is-visible {
-  transform: translateY(4em); }
+  transform: translateY(2em); }
 
 .newsletter {
   display: flex;
@@ -307,7 +307,7 @@ body {
   padding: 100px 50px; }
 
 .newsletter-info {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 1.6rem; }
   @media (max-width: 37.5em) {
     .newsletter-info {
@@ -316,7 +316,7 @@ body {
     font-weight: 300; }
 
 .newsletter-form {
-  margin: 20px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap; }
   @media (max-width: 37.5em) {
